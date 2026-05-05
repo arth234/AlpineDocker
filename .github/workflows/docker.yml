@@ -1,0 +1,16 @@
+name: Docker Build
+
+on:
+  push:
+    branches: ["main", "master"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    step:
+     - uses: action/checkout@v4
+      
+     - name: Build Docker
+       run: docker build .
+      
