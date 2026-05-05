@@ -8,9 +8,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    step:
-     - uses: action/checkout@v4
+    steps:
+     - name: Checkout
+     - uses: actions/checkout@v4
       
      - name: Build Docker
        run: docker build .
       
+--progress=plain
