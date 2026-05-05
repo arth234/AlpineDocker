@@ -12,5 +12,4 @@ jobs:
        uses: actions/checkout@v4
 
      - name: Build Docker
-       run: docker build .
---progress=plain
+       run: docker build . --progress=plain
